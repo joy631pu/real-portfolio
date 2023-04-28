@@ -1,0 +1,574 @@
+<!--Author: Joy Barua
+    Purpose: Displaying Porfolio Website 
+    Date (Last Modified): 03/26/2023-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Joy - I'm a Front-end Developer.</title>
+  <meta name="title" content="Joy - I'm a Front-end Developer.">
+  <meta name="description" content="This is a personal portfolio">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+  <link rel="preload" as="image" href="./assets/images/Blog.svg">
+  <!--Add necessary code to prevent the page being indexed by search engines-->
+  <meta name="robots" content="noindex">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="#experience" class="navbar-link">Experience</a>
+          </li>
+
+          <li>
+            <a href="#projects" class="navbar-link">Projects</a>
+          </li>          
+
+          <li>
+            <a href="#contact" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:jbarua@northislandcollege.ca" class="contact-link">jbarua@northislandcollege.ca</a>
+
+          <a href="tel:001234567890" class="contact-link">00 (123) 456 78 90</a>
+        </div>       
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>   
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" aria-label="home" id="home">
+        <div class="container">
+
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.png" width="560" height="540" alt="Joy" class="w-100"
+              data-reveal="top">
+
+            
+          </figure>
+
+          <div class="hero-content">
+
+            <h2 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.5s">
+              I'm a Front-end Developer.
+            </h2>
+
+            <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
+              Hello! I'm Joy, a freelance front-end developer based in Canada. I’m very passionate
+              about the work that I do.
+            </p>
+
+            <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
+              <p id="tooltip-text">Projects</p>
+              <a href="#projects" class="btn btn-primary" id="tooltip-button">See My Works</a>
+
+              <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" aria-label="about" id="about">
+        <div class="container">
+
+          <div class="wrapper">
+
+            <div data-reveal="left">
+              <h2 class="h2 section-title">What I Do?</h2>
+
+              <p class="section-text">
+                Hello. I am Joy Barua from Bangladesh. I have enrolled in Digital Design + Development program as from my early age I have a dream to become a software developer. 
+                I arrived in Canada on January 4th, 2022 and now I am living in 1783 England Ave, Courtenay,Vancouver Island,BC.
+              </p>
+            </div>
+
+            <ul class="progress-list" data-reveal="right">
+
+              <li class="progress-item">
+
+                <div class="label-wrapper">
+                  <p>Website Design</p>
+
+                  <span class="span">100 %</span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-fill" style="width: 100%; background-color: #c7b1dd"></div>
+                </div>
+
+              </li>
+
+              <li class="progress-item">
+
+                <div class="label-wrapper">
+                  <p>Mobile App Design</p>
+
+                  <span class="span">90 %</span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-fill" style="width: 90%; background-color: #8caeec"></div>
+                </div>
+
+              </li>
+
+              <li class="progress-item">
+
+                <div class="label-wrapper">
+                  <p> Software Development</p>
+
+                  <span class="span">85 %</span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-fill" style="width: 85%; background-color: #b0d4c1"></div>
+                </div>
+
+              </li>
+
+              <li class="progress-item">
+
+                <div class="label-wrapper">
+                  <p> SEO </p>
+
+                  <span class="span">85 %</span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-fill" style="width: 85%; background-color: #4f7661"></div>
+                </div>
+
+              </li>              
+            </ul>
+
+          </div>
+
+          <ul class="grid-list">
+
+            <li data-reveal="bottom">
+              <div class="about-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-1.svg" width="52" height="52" loading="lazy" alt="web design icon">
+                </div>
+
+                <h3 class="h4 card-title">Website Design</h3>
+
+                <p class="card-text">
+                  Website design refers to the design of websites that are displayed on the internet. 
+                  It usually refers to the user experience aspects of website development rather than software development. 
+                </p>
+
+              </div>
+            </li>
+
+            <li data-reveal="bottom" data-reveal-delay="0.25s">
+              <div class="about-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-2.svg" width="52" height="52" loading="lazy" alt="mobile design icon">
+                </div>
+
+                <h3 class="h4 card-title">Mobile App Design</h3>
+
+                <p class="card-text">
+                  Mobile app design is the task of designing mobile applications. 
+                  Even though mobile apps have a wide variety of uses, what unifies them is the need for optimal usability, 
+                  accessibility, engagement, and overall user experience. 
+                </p>
+
+              </div>
+            </li>
+
+            <li data-reveal="bottom" data-reveal-delay="0.5s">
+              <div class="about-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-3.svg" width="52" height="52" loading="lazy"
+                    alt="web development icon">
+                </div>
+
+                <h3 class="h4 card-title">Software Development</h3>
+
+                <p class="card-text">
+                  Software development refers to a set of computer science activities dedicated to the process of 
+                  creating, designing, deploying and supporting software.
+                </p>
+
+              </div>
+            </li>
+
+            <li data-reveal="bottom" data-reveal-delay="0.75s">
+              <div class="about-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-4.svg" width="52" height="52" loading="lazy" alt="web seo icon">
+                </div>
+
+                <h3 class="h4 card-title">SEO</h3>
+
+                <p class="card-text">
+                  Search engine optimization is the process of improving the quality and 
+                  quantity of website traffic to a website or a web page from search engines.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!--
+        - #Work Experience
+      -->
+
+    <section class="section experience" aria-label="experience" id="experience">
+        <div class="container">
+          <div class="wrapper">
+            <div data-reveal="left">
+
+        <h2 class="h2 section-title">Work Experience</h2>
+        <button class="accordion">Junior Software Developer</button>
+        <div class="panel"><br>
+          <p class="h4 card-title">Company Name: Authentic Four Technology, Bangladesh</p>
+          <p class="h4 card-title">Duration: May 01,2020 - Dec. 31,2021</p>
+          <p class="h4 card-title">Duties and Responsibilities:</p><br>
+          <ul>
+            <li>Incorporated database technologies such as relational databases, SQL and MySQL into coding  projects.</li>
+            <li>Worked with software development and testing team members to design and develop robust solutions to meet client requirements for functionality, scalability and performance.</li>
+            <li>Coordinated technical requirements for projects with internal and external stakeholders.</li>
+            <li>Prepared detailed reports on updates to project specifications, progress, identified conflicts and team activities.</li>
+            <li>Collaborated with project managers to select ambitious, but realistic coding milestones on pre-release software project development.</li>
+            <li>Revised, modularized and updated old code bases to modern development standards,reducing operating costs and improving functionality.</li>
+            <li>Developed software for both desktop and mobile operating systems.</li>
+          </ul>
+        </div>
+        <button class="accordion">Software Developer Intern</button>
+        <div class="panel"><br>
+          <p class="h4 card-title">Company Name: Authentic Four Technology, Bangladesh</p>
+          <p class="h4 card-title">Duration: Jan. 01,2020 - Apr. 30,2020</p>
+          <p class="h4 card-title">Duties and Responsibilities:</p><br>
+          <ul>
+            <li>Quickly learned new skills and applied them to daily tasks, improving efficiency and productivity.</li>
+            <li>Carried out day to day duties accurately and efficiently.</li>
+            <li>Demonstrated respect, friendliness and willingness to help wherever needed.</li>
+            <li>Learned software engineering process improvements and best practices.</li>
+            <li>Wrote clean, clear and well-tested code for various projects.</li>
+            <li>Contributed to deployments by testing, debugging and resolving issues for optimal results.</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+      <!-- 
+        - #PROJECT
+      -->
+
+      <section class="section project" aria-labelledby="project-label" id="projects">
+        <div class="container">
+
+          <div class="title-wrapper" data-reveal="top">
+
+            <div>
+              <h2 class="h2 section-title" id="project-label">Latest Projects</h2>
+
+              <p class="section-text">
+                Check out some of my latest projects with creative ideas.
+              </p>
+            </div>
+          </div>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="project-card project-card-1" style="background-color: #f8f5fb">
+
+                <div class="card-content" data-reveal="left">
+
+                  <p class="card-tag" style="color: #a07cc5">Website Design</p>
+
+                  <h3 class="h3 card-title">Delicious Inn</h3>
+
+                  <p class="card-text">
+                    This project was done by using HTML,SCSS and JavaScript. The purpose of this project
+                    is to introduce a new fast-food restaurant to it's potential clients.
+                  </p>
+
+                  <a href="https://joy631pu.github.io/restaurantproject/" target="_blank" class="btn-text" style="color: #a07cc5">
+                    <span class="span">See Project</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/Restaurant.PNG" width="650" height="370" loading="lazy" alt="Web Design"
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card project-card-2" style="background-color: #f1f5fd">
+
+                <div class="card-content" data-reveal="right">
+
+                  <p class=" card-tag" style="color: #3f78e0">Mobile App Design</p>
+
+                  <h3 class="h3 card-title">Popular Movies App</h3>
+
+                  <p class="card-text">
+                    This app was developed with a view to advertise some popular movies  
+                    so that people will become interested in watching any of those movies.
+                  </p>
+
+                  <a href="#" class="btn-text" style="color: #3f78e0">
+                    <span class="span">See Project</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="left">
+                  <img src="./assets/images/Mobile.png" width="600" height="367" loading="lazy" alt="Mobile App Design"
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+            <li>
+              <div class="project-card project-card-3" style="background-color: #f5faf7">
+
+                <div class="card-content" data-reveal="left">
+
+                  <p class=" card-tag" style="color: #7cb798">Web Design</p>
+
+                  <h3 class="h3 card-title">Ocean Conservation</h3>
+
+                  <p class="card-text">
+                    
+                  </p>
+
+                  <a href="#" class="btn-text" style="color: #7cb798">
+                    <span class="span">See Project</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="" width="600" height="367" loading="lazy" alt="Web Design"
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card project-card-4" style="background-color: #fcf4f6">
+
+                <div class="card-content" data-reveal="left">
+
+                  <p class=" card-tag" style="color: #d16b86">Mobile Design</p>
+
+                  <h3 class="h3 card-title">Storage App</h3>
+
+                  <p class="card-text">
+                    Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis. Scelerisque id ligula
+                    porta felis euismod semper.
+                  </p>
+
+                  <a href="#" class="btn-text" style="color: #d16b86">
+                    <span class="span">See Project</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="" width="620" height="370" loading="lazy" alt="Mobile Design"
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact" aria-label="contact" id="contact">
+        <div class="container">
+
+          <div class="contact-card">
+
+            <div class="contact-content" data-reveal="left">
+
+              <div class="card-icon">
+                <img src="./assets/images/icon-5.svg" width="44" height="44" loading="lazy" alt="envelop icon">
+              </div>
+
+              <h2 class="h2 section-title">If you like what you see, let's work together.</h2>
+
+              <p class="section-text">
+                I bring rapid solutions to make the life of my clients easier. Have any questions? Reach out to me from
+                this contact form and I will get back to you shortly.
+              </p>
+
+            </div>
+            
+            <!--Input Field-->
+            <form class="contact-form" data-reveal="right">
+
+              <div class="input-wrapper">
+                <input type="text" id="cname" value="" name="name" placeholder="Name *" required class="input-field" >
+
+                <input type="email" id="cemail" value="" name="email_address" placeholder="Email *" required class="input-field" >
+              </div>
+
+              <textarea name="message" id="cmessage" placeholder="Message *" required class="input-field" ></textarea>
+              <!--Connect JavaScript Function addActivity with onclick Event for displaying success message-->
+              <button id="csubmit" onclick="addActivity();" type="submit" class="btn btn-secondary" >Send message</button>
+              
+
+            </form>
+
+          </div>
+
+        </div>
+      </section>
+    
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="copyright">
+        © 2023 All rights reserved.
+      </p>
+
+      <ul class="social-list">
+
+        <li>
+          <a href="https://www.linkedin.com/in/joy-barua-a42b6619a/" target="_blank" class="social-link">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=100006269238224" target="_blank" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>          
+      </ul>
+
+    </div>
+  </footer>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./app.js"></script>
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+
+</body>
+
+</html>
